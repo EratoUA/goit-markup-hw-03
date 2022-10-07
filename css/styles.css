@@ -1,8 +1,12 @@
 :root{
     --main-color: #212121;
     --titel-color: #757575;
-    --main-background: #fff;
+    --main-background: #ffffff;
     --footer-background: #2F303A;
+    --logo-blue: #2196F3;
+    --logo-black: #000;
+    --background-titel-button: #188CE8;
+    --btn-sections: #F5F4FA;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
 }
@@ -11,26 +15,28 @@ body {
     font-family: var(--main-font);
     background-color:  var(--main-background);
     color: var(--main-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .logo-main{
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     text-decoration: none;
 }
 
 .logo-blue {
-    color: #2196F3;
+    color: var(--logo-blue);
 }
 
 .logo-black {
-    color: #000;
+    color: var(--logo-black);
 }
 
 .logo-white{
-    color: #ffff;
+    color: var(--main-background);
 }
 
 .list {
@@ -43,12 +49,16 @@ body {
     color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
+    line-height: 1.14;
     text-decoration: none;
+}
+.menu-link:hover,
+.menu-link:focus{
+    color: var(--logo-blue);
 }
 
 .header-contacts {
     color: var(--titel-color);
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
@@ -56,36 +66,38 @@ body {
 
 .header-contacts:hover,
 .header-contacts:focus {
-    color: #2196F3;
+    color: var(--logo-blue);
 }
 
 .main-titel {
-    color: #fff;
+    color: var(--main-background);
     font-weight: 900;
     font-size: 44px;
+    line-height: 1.36;
     margin: 0;
     margin-bottom: 30px;
     width: 640px;
     letter-spacing: 0.06em;
+    text-transform:uppercase;
 }
     
 .titel-button { 
-    color: #ffff;
+    color: var(--main-background);
     border: none;
-    background-color: #2196F3;
+    background-color: var(--logo-blue);
     font-weight: 700;
     font-size: 16px;
     padding: 10px 32px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 0.06em;
 }
 
 .titel-button:hover, 
-.titel-button:focus,
-.titel-button:active
-{
-    background-color:  #188CE8;
+.titel-button:focus {
+    background-color: var(--background-titel-button);
 }
 
 .order-titel { 
@@ -96,35 +108,31 @@ body {
 .advantage {
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
-    color: var(--main-color);
+    text-transform: uppercase;
+    line-height: 1.14;
 }
 
 .advantage-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--titel-color);
 }
 
 .product-team {
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
-    color: var(--main-color);
+    line-height: 1.17;
 }
 
 .name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
-    color: var(--main-color);
+    line-height: 1.19;
 }
 
 .work {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: 1.19;
     color: var(--titel-color);
 }
 
@@ -133,16 +141,21 @@ body {
 }
 
 .footer-contacts-city {
-    color: #fff;
+    color: var(--main-background);
     text-decoration: none;
     font-style: normal
 
 }
 
+.footer-contacts-city:hover,
+.footer-contacts-city:focus 
+{
+    color: var(--logo-blue);
+}
+
 .footer-contacts {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
+ 
+    line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-style: normal
@@ -151,26 +164,27 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus 
 {
-    color: #2196F3;
+    color: var(--logo-blue);
 }
 
 .btn-sections {
-    background-color: #F5F4FA;
-    color: var(--main-color);
+    background-color: var(--btn-sections);
     border: none;
     border-radius: 4px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     padding: 6px 22px;
     cursor: pointer;
+    font-family: inherit;
     
 }
 
 .btn-sections:hover,
 .btn-sections:focus,
 .btn-sections:active {
-    background-color:#2196F3;
+    color:var(--main-background);
+    background-color:var(--logo-blue);
 }
 
 .box {
@@ -180,14 +194,15 @@ body {
     color: var(--main-color);
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
 
 .project {
     color: var(--titel-color);
-    font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
 }
 
 
