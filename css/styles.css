@@ -19,13 +19,53 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1,h2,h3,p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.section{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-btn{
+    justify-content: center;
+}
+.list-footer{
+    list-style: none;
+
+}
 .logo-main{
     font-family: var(--secondary-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-}
+    }
 
 .logo-blue {
     color: var(--logo-blue);
@@ -39,11 +79,22 @@ body {
     color: var(--main-background);
 }
 
-.list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.menu-nav{
+    display: flex;
+    align-items: center;
+ }
 
+.nav{
+    margin-right: 50px;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.navigation{
+    margin-left: 93px;
+ }
+.nav:last-child{
+    margin-right: 0;
 }
 .menu-link{
     color: var(--main-color);
@@ -57,12 +108,24 @@ body {
     color: var(--logo-blue);
 }
 
+.header{
+  
+    border-bottom: 1px solid #ECECEC;
+}
 .header-contacts {
     color: var(--titel-color);
     font-weight: 500;
     font-size: 14px;
-    text-decoration: none;
+    text-decoration: none; 
 }
+.contacts {
+    margin-left: auto;
+}
+
+#header-tel {
+    margin-left: 50px;
+}
+
 
 .header-contacts:hover,
 .header-contacts:focus {
@@ -75,13 +138,16 @@ body {
     font-size: 44px;
     line-height: 1.36;
     margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    width: 640px;
+    width: 696px;
     letter-spacing: 0.06em;
     text-transform:uppercase;
 }
     
 .titel-button { 
+    
     color: var(--main-background);
     border: none;
     background-color: var(--logo-blue);
@@ -102,9 +168,16 @@ body {
 
 .order-titel { 
     background-color: var(--footer-background);
-    padding: 200px 0px;
+    padding: 200px 0px 200px 0px;
+    text-align: center;
 }
-
+.main-adventage{
+    width: 270px;
+    margin-right: 30px;
+}
+.main-adventage:nth-child(4n) {
+    margin-right: 0;
+}
 .advantage {
     font-weight: 700;
     font-size: 14px;
@@ -113,38 +186,69 @@ body {
 }
 
 .advantage-text {
+    margin-top: 10px;
     font-weight: 400;
     line-height: 1.71;
     color: var(--titel-color);
+}
+
+.product {
+    background-color: var(--btn-sections); 
 }
 
 .product-team {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
+.product-work{
+    margin-right: 30px;
+}
+.product-work:nth-child(3n){
+    margin-right: 0px;
+}
+
+.product-name{
+    width: 270px;
+    margin-right: 30px;
+}
+.product-name:nth-child(4n){
+    margin-right: 0px;
+}
 .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .work {
     font-size: 16px;
     line-height: 1.19;
     color: var(--titel-color);
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .footer {
     background-color: var(--footer-background);
+    padding-bottom: 60px;
+    padding-top: 60px;
 }
 
 .footer-contacts-city {
     color: var(--main-background);
     text-decoration: none;
-    font-style: normal
+    font-style: normal;
+}
 
+address{
+    margin-top: 20px;
 }
 
 .footer-contacts-city:hover,
@@ -154,11 +258,10 @@ body {
 }
 
 .footer-contacts {
- 
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-style: normal
+    font-style: normal;
 }
 
 .footer-contacts:hover,
@@ -166,8 +269,11 @@ body {
 {
     color: var(--logo-blue);
 }
-
+.list-footer li:nth-child(n + 2){
+margin-top: 9px;
+}
 .btn-sections {
+
     background-color: var(--btn-sections);
     border: none;
     border-radius: 4px;
@@ -177,7 +283,8 @@ body {
     padding: 6px 22px;
     cursor: pointer;
     font-family: inherit;
-    
+    margin-right: 8px;
+    margin-bottom: 50px;
 }
 
 .btn-sections:hover,
@@ -187,6 +294,24 @@ body {
     background-color:var(--logo-blue);
 }
 
+.list-project{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    
+}
+.project-img{
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.project-img:nth-child(3n){
+    margin-right: 0px;
+    margin-bottom: 0;
+}
+.project-img:nth-last-child(-n + 3){
+    margin-bottom: 0;
+}
 .box {
     text-decoration: none;
 }
@@ -204,7 +329,4 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
 }
-
-
-
 
