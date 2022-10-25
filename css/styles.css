@@ -9,6 +9,7 @@
     --btn-sections: #F5F4FA;
     --main-font: 'Roboto', sans-serif;
     --secondary-font: 'Raleway', sans-serif;
+    
 }
 
 body {
@@ -55,6 +56,7 @@ margin-right: auto;
 
 .menu-btn{
     justify-content: center;
+    margin-bottom: 50px;
 }
 .list-footer{
     list-style: none;
@@ -80,7 +82,7 @@ margin-right: auto;
     color: var(--main-background);
 }
 
-.menu-nav{
+.menu-nav {
     display: flex;
     align-items: center;
  }
@@ -110,15 +112,21 @@ margin-right: auto;
     color: var(--logo-blue);
 }
 
+.navigation .menu-link.current {
+    color: var(--logo-blue);
+}
+
 .header{
     border-bottom: 1px solid #ECECEC;
 }
+
 .header-contacts {
     color: var(--titel-color);
     font-weight: 500;
     font-size: 14px;
     text-decoration: none; 
 }
+
 .contacts {
     margin-left: auto;
 }
@@ -126,7 +134,11 @@ margin-right: auto;
 #header-tel {
     margin-left: 50px;
 }
+.header .container{
+    display: flex;
+    align-items: center;
 
+}
 .header-contacts:hover,
 .header-contacts:focus {
     color: var(--logo-blue);
@@ -158,6 +170,7 @@ margin-right: auto;
     cursor: pointer;
     font-family: inherit;
     letter-spacing: 0.06em;
+    line-height: 1.875;
 }
 
 .titel-button:hover, 
@@ -194,7 +207,9 @@ margin-right: auto;
 .product {
     background-color: var(--btn-sections); 
 }
-
+.products{
+    padding-top: 0;
+}
 .product-team {
     font-weight: 700;
     font-size: 36px;
@@ -224,7 +239,6 @@ margin-right: auto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -235,6 +249,12 @@ margin-right: auto;
     color: var(--titel-color);
     text-align: center;
     margin-bottom: 30px;
+}
+
+.name-work{
+background-color: #ffffff;
+padding-top: 30px;
+padding-bottom: 30px;
 }
 
 .footer {
@@ -287,7 +307,6 @@ margin-top: 9px;
     cursor: pointer;
     font-family: inherit;
     margin-right: 8px;
-    margin-bottom: 50px;
 }
 
 .btn-sections:hover,
@@ -318,6 +337,12 @@ margin-top: 9px;
     margin-bottom: 0;
 }
 
+.grid-notes{
+    padding: 20px 24px;
+    border-right: 1px solid #ECECEC;
+    border-left: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+}
 .box {
     text-decoration: none;
 }
